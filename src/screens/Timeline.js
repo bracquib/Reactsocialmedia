@@ -82,7 +82,7 @@ const PostsRoute = () => (
     </View>
 )
 
-const GroupRoute = () => (
+const NotifiactionRoute = () => (
     <View style={{ flex: 1, backfaceColor: 'blue' }}></View>
 )
 
@@ -314,7 +314,7 @@ const MessageRoute = () => (
 
 const renderScene = SceneMap({
     first: PostsRoute,
-    second: GroupRoute,
+    second: NotifiactionRoute,
     third: MessageRoute,
 })
 const Profile = () => {
@@ -470,7 +470,7 @@ const Profile = () => {
     const [index, setIndex] = useState(0)
     const [routes] = useState([
         { key: 'first', title: 'Posts', icon: 'square-outline' },
-        { key: 'second', title: 'Group', icon: 'globe' },
+        { key: 'second', title: 'Notifiactions', icon: 'globe' },
         { key: 'third', title: 'Message', icon: 'chatbox-outline' },
     ])
 

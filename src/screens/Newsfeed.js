@@ -99,8 +99,8 @@ const Feed = () => {
                         ) : null}
 
                                 <Image
-                                    source={item.image}
-                                    resizeMode="contain"
+                                source={item.image ? item.image : { uri: item.avatarurl }}              
+                                resizeMode="contain"
                                     style={{
                                         width: 96,
                                         height: 150,
